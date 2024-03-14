@@ -25,16 +25,16 @@ function App() {
             <img className="logo" src={logo} alt="" />
         </div>
 
-      {/* {
-        links.map((link, i) => <Button onClick={() => buttonHandler(i)}>{link.title}</Button>)
-      } */}
+      {
+        links.map((link, i) => <Button key={i} url={link.link}>{link.title}</Button>)
+      }
 
-      <Button url = "https://javarush.com/">Javarush</Button>
+      {/* <Button url = "https://javarush.com/">Javarush</Button>
       <Button url = "https://html5doctor.com">Html5 Doktor</Button>
       <Button url = "https://www.youtube.com/">Youtube</Button>
       <Button url = "https://frontend-stuff.com/blog/javascript-cheatsheet/">JS Шпаргалка</Button>
       <Button url = "https://tpverstak.ru/flex-cheatsheet/">CSS Шпаргалка</Button>
-      <Button url = "https://chat.openai.com/auth/login">Chat GPT</Button>
+      <Button url = "https://chat.openai.com/auth/login">Chat GPT</Button> */}
 
     </div>
 
