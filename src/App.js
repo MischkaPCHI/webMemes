@@ -28,8 +28,6 @@ function App() {
     <h1>Memes</h1>
 
     <div className="img">
-        {/* <img src={arrayOfImg[0]} alt="" /> */}
-        {/* <img src="./images/Снимок экрана 2024-02-08 122019.png" alt="" /> */}
         {arrayOfImg.map((img, i) => (
           <img key={i} src={img.memImg} alt=""/>
         ))}
