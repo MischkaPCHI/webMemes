@@ -24,25 +24,14 @@ function App() {
       }
     </div>
 
-    <div className='time'>Time: {now.toLocaleTimeString()}</div>
+    <div className="time">Time: {now.toLocaleTimeString()}</div>
     <h1>Memes</h1>
 
     <div className="img">
-        {arrayOfImg.map((img, i) => (
-          <img key={i} src={img.memImg} alt=""/>
-        ))}
-      </div>
+      {arrayOfImg.map((img, i) => (<img key={i} src={img.memImg} alt="" />))}
+    </div>
 
-      <div className="time">Time: {now.toLocaleTimeString()}</div>
-      <h1>Memes</h1>
-
-      <div className="img">
-        {arrayOfImg.map((img, i) => (
-          <img key={i} src={img.memImg} alt="" />
-        ))}
-      </div>
-
-      <footer>{/* <img src={facebook}></img> */}</footer>
+    <footer>{/* <img src={facebook}></img> */}</footer>
     </div>
   );
 }
