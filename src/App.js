@@ -14,15 +14,24 @@ function App() {
 
   return (
     <div>
-      <div className="header">
+      <div className="header"> 
         <div className="logo-wrapper">
           <img className="logo" src={logo} alt="" />
         </div>
+      <div/>
+      {
+        links.map((link, i) => <Button key={i} url={link.link}>{link.title}</Button>)
+      }
+    </div>
 
-        {links.map((link, i) => (
-          <Button key={i} url={link.link}>
-            {link.title}
-          </Button>
+    <div className='time'>Time: {now.toLocaleTimeString()}</div>
+    <h1>Memes</h1>
+
+    <div className="img">
+        {/* <img src={arrayOfImg[0]} alt="" /> */}
+        {/* <img src="./images/Снимок экрана 2024-02-08 122019.png" alt="" /> */}
+        {arrayOfImg.map((img, i) => (
+          <img key={i} src={img.memImg} alt=""/>
         ))}
       </div>
 
