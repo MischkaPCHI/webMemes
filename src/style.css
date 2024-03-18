@@ -1,67 +1,87 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* overflow: hidden; */
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
 }
 
-.header{
-    height: auto;                                       /* это если что задумано ) */
-    background-color: rgba(54, 54, 54, 0.616);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 50px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    position: sticky;
-    top: 0;
+body {
+  height: 100vh;
+  margin: 0;
+  background-size: 200% 200%;
+  background-image: linear-gradient(20deg, #00cc99, #eef0f5, #6600ff);
+  animation: gradient 20s ease-in infinite;
 }
 
-.logo{
-    height: 50px;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.flex-item{
-    font-size: 20px;
-    height: auto;
-    width: auto;
-    color: white;
+.header {
+  height: auto; /* это если что задумано ) */
+  background-color: rgba(54, 54, 54, 0.616);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: sticky;
+  top: 0;
 }
 
-button{
-    background-color: transparent;
-    border-color: transparent;
+.logo {
+  height: 50px;
 }
 
-.img{
-    text-align: center;
-    margin: 20px;
+.flex-item {
+  font-size: 20px;
+  height: auto;
+  width: auto;
+  color: white;
 }
 
-h1{
-    text-align: center;
-    font-size: 50px;
-    font-family: sans-serif;
+button {
+  background-color: transparent;
+  border-color: transparent;
 }
 
-.logo-wrapper{
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.img {
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.logo-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .time {
-    color: black;
-    font-size: 30px;
-    text-align: center;
+  color: black;
+  font-size: 30px;
+  text-align: center;
 }
 
 .custom-button {
-    background-color: transparent;
-    border-color: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 img {
-    width: 500px;
+  width: 500px;
 }
